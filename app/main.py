@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify
 import pickle
 import pandas as pd
 
-# Load trained model
 import os
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "model.pkl")
 with open(MODEL_PATH, 'rb') as f:
